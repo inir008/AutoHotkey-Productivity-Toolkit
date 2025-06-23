@@ -1,80 +1,132 @@
-A collection of productivity-enhancing AutoHotkey scripts designed to streamline your workflow and improve efficiency.
+# AutoHotkey Productivity Toolkit
 
-Features
-Window Management
-Minimize/Maximize Windows:
+A comprehensive AutoHotkey script that enhances Windows productivity with essential keyboard shortcuts and window management features.
 
-Win + Down Arrow - Minimize active window
+## Features
 
-Win + Up Arrow - Maximize active window
+### 🪟 Window Management
+- **Minimize/Maximize Windows**: Use `Win + ↓` to minimize and `Win + ↑` to maximize the active window
+- **Always On Top Toggle**: Press `Alt + T` to toggle any window to stay always on top
+- **Quick Alt-Tab**: Use `CapsLock` for instant window switching (simulates Alt+Tab)
 
-Always On Top:
+### 🔊 Audio Control
+- **Volume Control**: Hold `Alt` and scroll mouse wheel up/down to adjust volume
+- **Quick Mute**: Press `Alt + Middle Mouse Button` to mute/unmute
 
-Alt + T - Toggle always-on-top for active window
+### 🔍 Search & Browse
+- **Quick Search**: 
+  - `F1` - Search with Google
+  - `F2` - Search YouTube
+  - `Alt + Right Click` - Search selected text on Google
+- **Custom Search Dialog**: Enter your query in the popup dialog box
 
-Keyboard Shortcuts
-Alternative Close Window:
+### ⚙️ System Controls
+- **Quick Close**: Press `Alt + Q` instead of `Alt + F4` to close applications
+- **Suspend Hotkeys**: Press `Alt + S` to temporarily disable all hotkeys
 
-Alt + Q - Alternative to Alt+F4
+## Installation
 
-Fast Alt-Tab:
+1. **Download AutoHotkey**: Install from [autohotkey.com](https://www.autohotkey.com/)
+2. **Download Script**: Save `AutoHotkey-Productivity-Toolkit.ahk` to your desired location
+3. **Run Script**: Double-click the `.ahk` file to start
+4. **Auto-Start** (Optional): Add the script to your Windows startup folder for automatic loading
 
-Caps Lock - Quick Alt+Tab functionality
+### Adding to Startup
+1. Press `Win + R`, type `shell:startup`, and press Enter
+2. Copy the script file to this folder
+3. The script will now run automatically when Windows starts
 
-Suspend Hotkeys:
+## Keyboard Shortcuts Reference
 
-Alt + S - Toggle all hotkeys on/off
+| Shortcut | Function |
+|----------|----------|
+| `Win + ↓` | Minimize active window |
+| `Win + ↑` | Maximize active window |
+| `Alt + T` | Toggle always on top |
+| `Alt + Q` | Close application (Alt+F4) |
+| `Alt + S` | Suspend/resume hotkeys |
+| `Alt + Mouse Wheel` | Volume up/down |
+| `Alt + Middle Click` | Mute/unmute |
+| `Alt + Right Click` | Search selected text |
+| `F1` | Search with DuckDuckGo |
+| `F2` | Search YouTube |
+| `CapsLock` | Quick Alt-Tab |
 
-Volume Control
-Alt + Scroll Up - Volume Up
+## Key Modifiers Legend
+- `^` = Ctrl
+- `#` = Windows Key
+- `!` = Alt  
+- `+` = Shift
 
-Alt + Scroll Down - Volume Down
+## Compatibility
+- **OS**: Windows 7/8/10/11
+- **AutoHotkey Version**: v1.1+ (Classic)
+- **Architecture**: Works on both 32-bit and 64-bit systems
 
-Alt + Middle Mouse Button - Toggle Mute
+## Customization
 
-Search Tools
-Search Selected Text:
+The script is easily customizable. Here are some common modifications:
 
-Alt + Right Click - Search selected text on Google
+### Modify Shortcuts
+Change any shortcut by editing the hotkey definitions. For example, to use `Ctrl + Q` instead of `Alt + Q`:
+```autohotkey
+^q::!F4  ; Changed from !q::!F4
+```
 
-Quick Search Box:
+### Add New Features
+The script structure makes it easy to add new hotkeys. Follow the existing pattern:
+```autohotkey
+; Your custom hotkey
+Hotkey::
+YourAction
+return
+```
 
-F1 - Open DuckDuckGo search
+## Troubleshooting
 
-F2 - Open YouTube search
+### Script Not Working
+- Ensure AutoHotkey is properly installed
+- Check if the script is running (look for AutoHotkey icon in system tray)
+- Try running AutoHotkey as administrator
 
-Installation
-Download and install AutoHotkey
+### Conflicts with Other Software
+- Some applications may override these shortcuts
+- Use `Alt + S` to temporarily suspend hotkeys if needed
+- Consider changing conflicting shortcuts in the script
 
-Download the script file (AutoHotkey-Productivity-Toolkit.ahk)
+### Performance Issues
+- The script uses minimal system resources
+- If experiencing issues, try restarting the script
 
-Double-click the file to run it (will appear in system tray)
+## Contributing
 
-(Optional) Add to startup folder to run automatically
+Feel free to contribute improvements:
 
-Customization
-To modify any hotkeys:
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
 
-Edit the script with a text editor
+## License
 
-Change the key combinations before the :: symbols
+This project is open source and available under the [MIT License](LICENSE).
 
-Save and reload the script
+## Support
 
-Common modifier symbols:
+If you encounter issues or have suggestions:
+- Open an issue on GitHub
+- Check AutoHotkey documentation at [autohotkey.com/docs](https://www.autohotkey.com/docs/)
 
-^ = Ctrl
+## Changelog
 
-! = Alt
+### v1.0
+- Initial release with core productivity features
+- Window management shortcuts
+- Audio control via mouse wheel
+- Quick search functionality
+- System control hotkeys
 
-# = Windows key
+---
 
-+ = Shift
-
-Requirements
-Windows 7 or later
-
-AutoHotkey v1.1+ (Unicode 32-bit recommended)
-
-Contributing
-Feel free to fork and submit pull requests with additional productivity shortcuts!
+**Note**: This script modifies system behavior through keyboard shortcuts. Please review the shortcuts to ensure they don't conflict with your existing workflow.
