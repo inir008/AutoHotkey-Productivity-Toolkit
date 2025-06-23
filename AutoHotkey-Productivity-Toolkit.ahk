@@ -63,7 +63,7 @@ Return
 customSearch(service := 1)
 {
     static urls := { 0: ""
-                  , 1: "https://duckduckgo.com/?t=h_&q=" 
+                  , 1: "https://google.com/search?q=" 
                   , 2: "https://www.youtube.com/results?search_query=" }
 
     InputBox, query, 5609234566923853434695838975569209345,,, 300, 100
